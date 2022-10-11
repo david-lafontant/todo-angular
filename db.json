@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Review JavaScript",
+      "day": "June 6",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Study React",
+      "day": "June 7",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Review Ruby",
+      "day": "June 10",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "Review Rails",
+      "day": "June 15",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "Lear Vue",
+      "day": "June 18",
+      "reminder": true
+    }
+  ]
+}
