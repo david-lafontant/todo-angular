@@ -12,9 +12,10 @@ export class TasksComponent implements OnInit {
 
   task: Task[] = [];
 
-  constructor() { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
+    this.task = this.taskService.getTask()
   }
 
 }
