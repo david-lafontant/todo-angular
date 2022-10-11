@@ -10,12 +10,12 @@ import { TaskService } from '../../services/task.service';
 })
 export class TasksComponent implements OnInit {
 
-  task: Task[] = [];
+  tasks: Task[] = [];
 
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
-    this.task = this.taskService.getTask()
+    this.taskService.getTask().subscribe((tasks) => this.tasks = tasks)
   }
 
 }
