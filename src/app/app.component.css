@@ -1,0 +1,6 @@
+.container{
+  max-width: 500px;
+  border: thin solid rgb(6, 33, 46);
+  margin: 1rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
