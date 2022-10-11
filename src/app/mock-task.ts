@@ -14,7 +14,7 @@ export const TASKS: Task[] = [
     reminder: true,
   },
   {
-    id: 3,
+    id: 3, 
     text: "Review Ruby",
     day: "June 10",
     reminder: true,
