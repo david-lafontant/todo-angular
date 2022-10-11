@@ -2,5 +2,14 @@
   background-color: aquamarine;
   margin: 2rem;
   padding: 1rem 2rem;
+
+}
+
+.task-item > h3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item > h3 > .fa-trash{
   cursor: pointer;
 }
