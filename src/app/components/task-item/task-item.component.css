@@ -13,3 +13,7 @@
 .task-item > h3 > .fa-trash{
   cursor: pointer;
 }
+
+.reminder {
+  color: red;
+}
