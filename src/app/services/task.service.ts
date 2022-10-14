@@ -4,6 +4,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 // import { TASKS } from '../mock-task';
 import { Task } from '../Task';
 
+const httpOptions = {
+  headers : new HttpHeaders({ 'content-type': 'application/json'})
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -23,4 +26,10 @@ export class TaskService {
     const delUri: string = `${this.apiUrl}/${task.id}`;
     return this.http.delete<Task>(delUri);
   }
+
+  toggleTask(task: Task): Observable<Task>{
+    const toggleUrl: string = `${this.apiUrl}/${task.id}`;
+    return this.http.put<Task>(toggleUrl, task, httpOptions );
+  }
+
 }
