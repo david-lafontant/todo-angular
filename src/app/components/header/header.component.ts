@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   title: string = 'ToDo App';
   showAddTask: boolean;
   subscription: Subscription = new Subscription;
-  constructor() { }
+  constructor( private uiService: UiService) { }
 
   ngOnInit(): void {
   }
