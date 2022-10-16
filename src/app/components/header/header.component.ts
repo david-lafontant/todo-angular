@@ -9,6 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
   title: string = 'ToDo App';
+  showAddTask: boolean;
+  subscription: Subscription = new Subscription;
   constructor() { }
 
   ngOnInit(): void {
