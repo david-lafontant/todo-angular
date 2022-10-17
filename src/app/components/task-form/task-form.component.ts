@@ -11,6 +11,7 @@ export class TaskFormComponent implements OnInit {
   text: string ="";
   day: string ="" ;
   reminder: boolean = false;
+  showAddTask!: boolean;
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
   constructor(private uiService: UiService) { }
