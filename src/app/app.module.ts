@@ -12,7 +12,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskFormComponent } from './components/task-form/task-form.component';
 import { FormsModule } from '@angular/forms';
 
-
+const appRoutes: Routes = [
+  {
+    path: '', component: TasksComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
