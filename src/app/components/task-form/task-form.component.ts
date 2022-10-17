@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../Task';
+import {UiService } from '../../services/ui.service';
 
 @Component({
   selector: 'app-task-form',
@@ -12,7 +13,7 @@ export class TaskFormComponent implements OnInit {
   reminder: boolean = false;
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
-  constructor() { }
+  constructor(private uiService: UiService) { }
 
   ngOnInit(): void {
   }
